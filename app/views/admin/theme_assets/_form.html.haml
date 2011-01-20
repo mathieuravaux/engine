@@ -19,7 +19,7 @@
       - if @theme_asset.new_record?
         = f.input :plain_text_name
 
-        = f.custom_input :content_type, :label => ".content_type" do
+        = f.custom_input :content_type, :label => ".content_type", :with_label => false do
           = f.select :content_type, %w(stylesheet javascript)
 
       = f.custom_input :plain_text, :css => 'full', :with_label => false do
